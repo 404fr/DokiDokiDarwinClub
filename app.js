@@ -1,5 +1,5 @@
 /**
- * Doki Doki Darwin Club - Main Application Engine
+ * Doki Doki Darwin Club - Enhanced Main Application Engine
  */
 
 class VisualNovelEngine {
@@ -133,9 +133,15 @@ class VisualNovelEngine {
       return;
     }
 
-    // Set Background
+    // Set Background & Lighting Mode
     if (node.bg) {
       this.gameViewport.style.backgroundImage = `url('${node.bg}')`;
+    }
+
+    // Remove previous background mode classes
+    this.gameViewport.className = "game-viewport";
+    if (node.bgMode) {
+      this.gameViewport.classList.add(`bg-mode-${node.bgMode}`);
     }
 
     // Sound and BGM
@@ -157,7 +163,7 @@ class VisualNovelEngine {
       setTimeout(() => this.gameViewport.classList.remove("screen-shake"), 450);
     }
 
-    // Character Sprites
+    // Character Sprites & Aura FX
     this.updateSprites(node);
 
     // Speaker Name
@@ -182,6 +188,7 @@ class VisualNovelEngine {
       img.className = "sprite-img";
       if (charObj.bounce) img.classList.add("bounce-anim");
       if (charObj.shake) img.classList.add("shake-anim");
+      if (charObj.aura) img.classList.add(charObj.aura);
       container.appendChild(img);
     };
 

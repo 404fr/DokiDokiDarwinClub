@@ -1,4 +1,4 @@
-/* Doki Doki Darwin Club - DDLC Visual Style & Animations */
+/* Doki Doki Darwin Club - DDLC Visual Style, Lighting Modes & Particle FX */
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@600;800;900&family=Permanent+Marker&display=swap');
 
@@ -104,7 +104,29 @@ body {
   inset: 0;
   background-size: cover;
   background-position: center;
-  transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out, filter 0.5s ease;
+}
+
+/* Background Atmosphere Modes */
+.bg-mode-asphalt {
+  filter: contrast(120%) saturate(130%) sepia(20%);
+}
+
+.bg-mode-detention {
+  filter: contrast(110%) brightness(85%) hue-rotate(-10deg);
+}
+
+.bg-mode-sunset {
+  filter: sepia(40%) hue-rotate(-20deg) saturate(160%);
+}
+
+.bg-mode-police-sirens {
+  animation: policeSiren 0.5s infinite alternate;
+}
+
+@keyframes policeSiren {
+  0% { filter: drop-shadow(0 0 50px rgba(255, 0, 0, 0.8)) sepia(50%) hue-rotate(300deg); }
+  100% { filter: drop-shadow(0 0 50px rgba(0, 100, 255, 0.8)) sepia(50%) hue-rotate(180deg); }
 }
 
 .character-stage {
@@ -121,13 +143,13 @@ body {
   position: absolute;
   bottom: 0;
   height: 85%;
-  max-width: 350px;
+  max-width: 380px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.sprite-container.left { left: 80px; }
+.sprite-container.left { left: 60px; }
 .sprite-container.center { left: 50%; transform: translateX(-50%); }
-.sprite-container.right { right: 80px; }
+.sprite-container.right { right: 60px; }
 
 .sprite-img {
   height: 100%;
@@ -136,13 +158,46 @@ body {
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
 }
 
+/* Special Sprite Variant Effects */
+.sigma-aura {
+  filter: drop-shadow(0 0 35px #ffd700) brightness(115%);
+  animation: auraPulse 1s infinite alternate;
+}
+@keyframes auraPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.04); }
+}
+
+.tsundere-angry {
+  filter: drop-shadow(0 0 25px #ff0055) hue-rotate(-15deg);
+  animation: angryVibrate 0.15s infinite;
+}
+@keyframes angryVibrate {
+  0% { transform: translate(1px, 1px); }
+  50% { transform: translate(-2px, 0px); }
+  100% { transform: translate(1px, -1px); }
+}
+
+.yandere-glitch-eye {
+  filter: contrast(180%) drop-shadow(0 0 30px #ff0000) hue-rotate(280deg);
+  animation: yanderePulse 0.3s infinite alternate;
+}
+@keyframes yanderePulse {
+  0% { filter: contrast(180%) drop-shadow(0 0 30px #ff0000); }
+  100% { filter: contrast(220%) drop-shadow(0 0 50px #8b0000); }
+}
+
+.baddie-sparkle {
+  filter: drop-shadow(0 0 30px #ff69b4) brightness(110%);
+}
+
 /* Character Animations */
 .bounce-anim {
   animation: spriteBounce 0.5s ease;
 }
 @keyframes spriteBounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-30px); }
+  50% { transform: translateY(-35px); }
 }
 
 .shake-anim {
