@@ -133,15 +133,14 @@ class VisualNovelEngine {
       return;
     }
 
-    // Set Background Image & Lighting Mode
+    // Set Background Image & Location Mode
+    this.gameViewport.className = "game-viewport";
     if (node.bg) {
       this.gameViewport.style.backgroundImage = `url('${node.bg}')`;
     } else {
-      this.gameViewport.style.backgroundImage = 'none';
+      this.gameViewport.style.backgroundImage = "";
     }
 
-    // Remove previous background mode classes
-    this.gameViewport.className = "game-viewport";
     if (node.bgMode) {
       this.gameViewport.classList.add(`bg-mode-${node.bgMode}`);
     }
