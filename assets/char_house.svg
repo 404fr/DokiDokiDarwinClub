@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <!-- Legs / Pants -->
+    <rect x="140" y="380" width="45" height="200" fill="#2c302e" rx="6"/>
+    <rect x="215" y="380" width="45" height="200" fill="#2c302e" rx="6"/>
+    <!-- Shoes -->
+    <rect x="130" y="560" width="60" height="30" fill="#111" rx="8"/>
+    <rect x="210" y="560" width="60" height="30" fill="#111" rx="8"/>
+    <!-- Walking Cane -->
+    <path d="M 100,260 L 100,570" stroke="#5d4037" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 100,260 Q 100,220 130,220" stroke="#5d4037" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <!-- Hand holding Cane -->
+    <circle cx="125" cy="225" r="18" fill="#e0ac69"/>
+    <!-- Torso / Shirt -->
+    <rect x="130" y="200" width="140" height="190" fill="#3f51b5" rx="12"/>
+    <!-- Wrinkled T-Shirt Collars -->
+    <polygon points="170,200 200,240 230,200" fill="#e8eaf6"/>
+    <!-- Leather Jacket -->
+    <path d="M 120,200 L 160,200 L 165,390 L 120,380 Z" fill="#212121"/>
+    <path d="M 280,200 L 240,200 L 235,390 L 280,380 Z" fill="#212121"/>
+    <!-- Stethoscope in pocket -->
+    <path d="M 245,260 Q 260,290 250,320" stroke="#9e9e9e" stroke-width="4" fill="none"/>
+    <!-- Vicodin Pill Bottle in right hand -->
+    <rect x="270" y="310" width="25" height="40" fill="#ff9800" rx="4"/>
+    <rect x="267" y="303" width="31" height="10" fill="#ffffff" rx="2"/>
+    <text x="273" y="334" fill="#fff" font-size="10" font-weight="bold">VIC</text>
+    <circle cx="270" cy="330" r="14" fill="#e0ac69"/>
+    <!-- Neck -->
+    <rect x="180" y="160" width="40" height="50" fill="#e0ac69"/>
+    <!-- Head -->
+    <ellipse cx="200" cy="130" rx="55" ry="65" fill="#e0ac69"/>
+    <!-- Messy Hair -->
+    <path d="M 140,120 Q 150,50 200,50 Q 250,50 260,120 Q 230,70 200,75 Q 170,70 140,120 Z" fill="#4e342e"/>
+    <!-- Stubble Beard -->
+    <path d="M 155,140 C 155,185 245,185 245,140 C 245,195 155,195 155,140 Z" fill="#6d4c41" opacity="0.5"/>
+    <!-- Sarcastic Squinting Eyes -->
+    <ellipse cx="175" cy="120" rx="10" ry="6" fill="#ffffff"/>
+    <circle cx="175" cy="120" r="4" fill="#2196f3"/>
+    <line x1="160" y1="110" x2="190" y2="115" stroke="#3e2723" stroke-width="3"/>
+    
+    <ellipse cx="225" cy="120" rx="10" ry="6" fill="#ffffff"/>
+    <circle cx="225" cy="120" r="4" fill="#2196f3"/>
+    <line x1="210" y1="115" x2="240" y2="110" stroke="#3e2723" stroke-width="3"/>
+    <!-- Smirking Mouth -->
+    <path d="M 180,155 Q 210,165 225,150" stroke="#3e2723" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Eyebrow Raised -->
+    <path d="M 162,100 Q 175,92 188,102" stroke="#3e2723" stroke-width="3" fill="none"/>
+    <path d="M 212,102 Q 225,90 238,98" stroke="#3e2723" stroke-width="3" fill="none"/>
+    <!-- Doctor Badge -->
+    <rect x="135" y="240" width="35" height="22" fill="#ffffff" stroke="#ccc" rx="2"/>
+    <text x="138" y="255" fill="#d32f2f" font-size="8" font-weight="bold">DR. HOUSE</text>
+  </g>
+</svg>

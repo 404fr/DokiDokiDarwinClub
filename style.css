@@ -107,29 +107,7 @@ body {
   transition: background-image 0.5s ease-in-out, filter 0.5s ease, background 0.5s ease;
 }
 
-/* Distinct Atmospheric Background Locations */
-.bg-mode-asphalt {
-  background: linear-gradient(to bottom, #1a2a3a 0%, #3a4a5a 45%, #222225 45%, #111113 100%) !important;
-  background-size: cover !important;
-  box-shadow: inset 0 -40px 100px rgba(255, 140, 0, 0.3);
-}
-
-.bg-mode-bedroom {
-  background: linear-gradient(135deg, #3d2331 0%, #5c3548 50%, #2b1820 100%) !important;
-  background-size: cover !important;
-  box-shadow: inset 0 0 120px rgba(255, 182, 193, 0.15);
-}
-
-.bg-mode-school-hall {
-  background: linear-gradient(to bottom, #b3e5fc 0%, #e1f5fe 45%, #fff3e0 45%, #d7ccc8 100%) !important;
-  background-size: cover !important;
-}
-
-.bg-mode-courtyard {
-  background: linear-gradient(to bottom, #ff7e5f 0%, #feb47b 50%, #6a304c 100%) !important;
-  background-size: cover !important;
-}
-
+/* Background Atmosphere Modes */
 .bg-mode-police-sirens {
   animation: policeSiren 0.5s infinite alternate;
 }
@@ -176,6 +154,19 @@ body {
 @keyframes auraPulse {
   0% { transform: scale(1); }
   100% { transform: scale(1.04); }
+}
+
+.house-cynical {
+  filter: drop-shadow(0 0 25px #00d2ff) contrast(110%);
+}
+
+.victor-charm {
+  filter: drop-shadow(0 0 35px #e91e63) brightness(110%);
+  animation: rivalFloat 1.5s infinite alternate ease-in-out;
+}
+@keyframes rivalFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }
 
 .tsundere-angry {
@@ -425,7 +416,7 @@ body {
 }
 
 .poem-words-grid {
-  display.grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-top: 30px;

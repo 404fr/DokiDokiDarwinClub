@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2b4c"/>
+      <stop offset="60%" stop-color="#3b5998"/>
+      <stop offset="100%" stop-color="#ff7b54"/>
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#333338"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1280" height="420" fill="url(#skyGrad)"/>
+  <!-- Sun/Glow -->
+  <circle cx="640" cy="380" r="140" fill="#ffb26b" opacity="0.4"/>
+  <!-- City Horizon Silhouette -->
+  <path d="M0,420 L50,380 L120,420 L180,350 L250,420 L380,360 L450,420 L600,340 L720,420 L850,370 L980,420 L1100,350 L1280,420 L1280,450 L0,450 Z" fill="#1d2636"/>
+  <!-- Asphalt Road -->
+  <polygon points="0,720 1280,720 850,420 430,420" fill="url(#roadGrad)"/>
+  <!-- Sidewalks -->
+  <polygon points="0,720 430,420 0,420" fill="#55555e"/>
+  <polygon points="1280,720 850,420 1280,420" fill="#55555e"/>
+  <!-- Road Yellow Dashed Line -->
+  <polygon points="635,420 645,420 648,460 632,460" fill="#ffcc00"/>
+  <polygon points="630,480 650,480 655,540 625,540" fill="#ffcc00"/>
+  <polygon points="622,570 658,570 665,650 615,650" fill="#ffcc00"/>
+  <!-- Blue Sparks & Butt Skid Marks -->
+  <path d="M520,700 C 580,620 620,530 635,450" stroke="#00d2ff" stroke-width="8" fill="none" opacity="0.8" stroke-dasharray="10 5"/>
+  <path d="M540,710 C 600,630 630,540 638,455" stroke="#ff007f" stroke-width="6" fill="none" opacity="0.9"/>
+  <!-- Street Lamps -->
+  <line x1="200" y1="420" x2="200" y2="300" stroke="#111" stroke-width="6"/>
+  <circle cx="200" cy="300" r="12" fill="#fff" opacity="0.9"/>
+  <line x1="1080" y1="420" x2="1080" y2="300" stroke="#111" stroke-width="6"/>
+  <circle cx="1080" cy="300" r="12" fill="#fff" opacity="0.9"/>
+</svg>

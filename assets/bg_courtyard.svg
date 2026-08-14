@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff512f"/>
+      <stop offset="50%" stop-color="#f09819"/>
+      <stop offset="100%" stop-color="#ffc3a0"/>
+    </linearGradient>
+    <linearGradient id="grassGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ea852"/>
+      <stop offset="100%" stop-color="#2e7d32"/>
+    </linearGradient>
+  </defs>
+  <!-- Sunset Sky -->
+  <rect width="1280" height="460" fill="url(#sunsetSky)"/>
+  <!-- Glowing Sun -->
+  <circle cx="640" cy="300" r="160" fill="#fff5cc" opacity="0.6"/>
+  <!-- School Building Silhouette -->
+  <path d="M0,460 L120,380 L350,380 L400,460 L880,460 L930,360 L1150,360 L1280,460 Z" fill="#6a1b9a" opacity="0.3"/>
+  <!-- Grass Lawn -->
+  <rect y="460" width="1280" height="260" fill="url(#grassGrad)"/>
+  <!-- Stone Pathway -->
+  <polygon points="480,720 800,720 700,460 580,460" fill="#e0e0e0"/>
+  <!-- Cherry Blossom Trees Silhouette -->
+  <circle cx="150" cy="320" r="120" fill="#ff4081" opacity="0.7"/>
+  <rect x="135" y="400" width="30" height="120" fill="#5d4037"/>
+  <circle cx="1130" cy="320" r="120" fill="#ff4081" opacity="0.7"/>
+  <rect x="1115" y="400" width="30" height="120" fill="#5d4037"/>
+  <!-- Wooden Bench -->
+  <rect x="250" y="520" width="160" height="40" fill="#8d6e63" rx="4"/>
+  <rect x="260" y="560" width="20" height="40" fill="#4e342e"/>
+  <rect x="380" y="560" width="20" height="40" fill="#4e342e"/>
+</svg>

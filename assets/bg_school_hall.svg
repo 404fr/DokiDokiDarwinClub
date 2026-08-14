@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="hallWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#cbe3ef"/>
+    </linearGradient>
+    <linearGradient id="hallFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2cbb4"/>
+      <stop offset="100%" stop-color="#b89b7d"/>
+    </linearGradient>
+  </defs>
+  <!-- Hallway Wall -->
+  <rect width="1280" height="480" fill="url(#hallWall)"/>
+  <!-- Hallway Floor -->
+  <rect y="480" width="1280" height="240" fill="url(#hallFloor)"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#8d6e63" stroke-width="8"/>
+  <!-- Tiled Floor Lines -->
+  <line x1="0" y1="560" x2="1280" y2="560" stroke="#a1887f" stroke-width="2"/>
+  <line x1="0" y1="640" x2="1280" y2="640" stroke="#a1887f" stroke-width="2"/>
+  <!-- Windows on Wall -->
+  <rect x="100" y="60" width="300" height="260" fill="#bbdefb" stroke="#78909c" stroke-width="6" rx="4"/>
+  <line x1="250" y1="60" x2="250" y2="320" stroke="#78909c" stroke-width="4"/>
+  <line x1="100" y1="190" x2="400" y2="190" stroke="#78909c" stroke-width="4"/>
+  
+  <rect x="880" y="60" width="300" height="260" fill="#bbdefb" stroke="#78909c" stroke-width="6" rx="4"/>
+  <line x1="1030" y1="60" x2="1030" y2="320" stroke="#78909c" stroke-width="4"/>
+  <line x1="880" y1="190" x2="1180" y2="190" stroke="#78909c" stroke-width="4"/>
+  <!-- Lockers along Corridor -->
+  <rect x="460" y="160" width="360" height="320" fill="#cfd8dc" stroke="#607d8b" stroke-width="4"/>
+  <line x1="550" y1="160" x2="550" y2="480" stroke="#607d8b" stroke-width="2"/>
+  <line x1="640" y1="160" x2="640" y2="480" stroke="#607d8b" stroke-width="2"/>
+  <line x1="730" y1="160" x2="730" y2="480" stroke="#607d8b" stroke-width="2"/>
+  <line x1="460" y1="320" x2="820" y2="320" stroke="#607d8b" stroke-width="2"/>
+  <!-- Locker Vents -->
+  <rect x="480" y="180" width="40" height="8" fill="#90a4ae"/>
+  <rect x="570" y="180" width="40" height="8" fill="#90a4ae"/>
+  <rect x="660" y="180" width="40" height="8" fill="#90a4ae"/>
+  <rect x="750" y="180" width="40" height="8" fill="#90a4ae"/>
+  <!-- School Sign -->
+  <rect x="540" y="60" width="200" height="60" fill="#fff" stroke="#ff4081" stroke-width="4" rx="8"/>
+  <text x="560" y="100" fill="#ff1493" font-size="20" font-weight="bold">DETENTION HALL</text>
+</svg>
