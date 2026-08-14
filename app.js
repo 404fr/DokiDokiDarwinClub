@@ -133,9 +133,11 @@ class VisualNovelEngine {
       return;
     }
 
-    // Set Background & Lighting Mode
+    // Set Background Image & Lighting Mode
     if (node.bg) {
       this.gameViewport.style.backgroundImage = `url('${node.bg}')`;
+    } else {
+      this.gameViewport.style.backgroundImage = 'none';
     }
 
     // Remove previous background mode classes

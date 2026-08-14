@@ -1,5 +1,5 @@
 /**
- * Doki Doki Darwin Club - Enhanced Game Script & Poem Minigame Data
+ * Doki Doki Darwin Club - Corrected Background Locations Script & Poem Minigame Data
  */
 
 window.GAME_POEM_WORDS = [
@@ -27,6 +27,7 @@ window.GAME_STORY = {
       nodes: [
         {
           bg: "assets/bg_bakery.jpg",
+          bgMode: "",
           bgm: "happy",
           speaker: "Narrator",
           text: "It was a peaceful afternoon in town. Darwin, our glorious lead character, stepped casually into the local bakkery...",
@@ -49,6 +50,7 @@ window.GAME_STORY = {
         },
         {
           bg: "assets/bg_hospital.jpg",
+          bgMode: "",
           bgm: "sigma",
           speaker: "Narrator",
           text: "Darwin slowly opens his eyes in a sanitized hospital room. A shadowy figure towers menacingly over his bed...",
@@ -112,7 +114,7 @@ window.GAME_STORY = {
           char: { name: "Darwin", img: "assets/char_darwin.jpg", pos: "center" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
           bgMode: "asphalt",
           bgm: "happy",
           speaker: "Narrator",
@@ -121,63 +123,72 @@ window.GAME_STORY = {
           char: { name: "Darwin", img: "assets/char_darwin_butt_slide.jpg", pos: "center", bounce: true }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
           bgMode: "asphalt",
           speaker: "Darwin",
           text: "I am known for sliding on asphalt that’s my whole charafter trait in this story! I Invested all my skill points on that. Also why i have such a small penis.",
           char: { name: "Darwin", img: "assets/char_darwin_butt_slide.jpg", pos: "center" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Narrator",
           text: "After what felt like mere minutes of intense friction, Darwin reaches his front door and violently kicks it open!",
           char: null
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Darwin",
           text: "Whats up fam!!! What’s up my D A double D Y, and you too mother I am quite grateful to you for making me such a culinary masterpiece! And my brother is here too I guess His names Pactilion but he has no relevance to the story whatsoever.",
           char: { name: "Darwin", img: "assets/char_darwin.jpg", pos: "left" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           bgm: "sigma",
           speaker: "Narrator",
           text: "Darwin walks into his bedroom and is stunned to find Daniel sitting casually on his bed.",
           char: { name: "Daniel", img: "assets/char_daniel.jpg", pos: "right", aura: "sigma-aura" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Daniel",
           text: "Wsg cuh. I hope you don't mind me master debating in your room.",
           char: { name: "Daniel", img: "assets/char_daniel.jpg", pos: "right", bounce: true, aura: "sigma-aura" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Darwin",
           text: "Bro its alr cuh. Which college girls are you master debating this time?",
           char: { name: "Darwin", img: "assets/char_darwin.jpg", pos: "left" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Daniel",
           text: "Rafiki is getting master debated like crazy rn. I hope you don't mind cuh.",
           char: { name: "Daniel", img: "assets/char_daniel.jpg", pos: "right", aura: "sigma-aura" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Darwin",
           text: "Fuck Rafiki can’t debate for shit! She or he i don't really know is gonna get cooked lowkeyley!",
           char: { name: "Darwin", img: "assets/char_darwin_shocked.jpg", pos: "left", shake: true }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "Darwin",
           text: "But lowkey I’m like such a good guy and 6 meters tall like Marlon shit so I’ll save them? Or it? I don’t know this generation can be anything nowadays.",
           char: { name: "Darwin", img: "assets/char_darwin.jpg", pos: "center" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
+          bgMode: "bedroom",
           speaker: "System",
           text: "End of Chapter 1! Time to write a poem for the Literature Club before Chapter 2!",
           triggerPoem: true
@@ -189,7 +200,7 @@ window.GAME_STORY = {
       title: "Chapter 2: The Baddie Dog and the Kindergarten Sanctuary",
       nodes: [
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
           bgMode: "asphalt",
           bgm: "dramatic",
           speaker: "Narrator",
@@ -197,7 +208,7 @@ window.GAME_STORY = {
           char: { name: "Darwin", img: "assets/char_darwin_shocked.jpg", pos: "center", shake: true }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
           bgMode: "asphalt",
           speaker: "Darwin",
           text: "NOT TODAY ANTLER BOZO! MAXIMUM ASPHALT FRICTION ACTIVATED!",
@@ -205,7 +216,7 @@ window.GAME_STORY = {
           char: { name: "Darwin", img: "assets/char_darwin_butt_slide.jpg", pos: "center", bounce: true }
         },
         {
-          bg: "assets/bg_bakery.jpg",
+          bg: "",
           bgMode: "asphalt",
           speaker: "Narrator",
           text: "Darwin drops to his glutes, gliding across the pavement at Mach 3 with sparks flying out of his pants! He slides straight through the double glass doors of the school!",
@@ -214,37 +225,38 @@ window.GAME_STORY = {
           char: { name: "Darwin", img: "assets/char_darwin_butt_slide.jpg", pos: "center" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
-          bgMode: "detention",
+          bg: "",
+          bgMode: "school-hall",
           bgm: "happy",
           speaker: "Darwin",
           text: "Phew, safe! I totally juked that antler-wearing bozo!",
           char: { name: "Darwin", img: "assets/char_darwin.jpg", pos: "left" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
-          bgMode: "detention",
+          bg: "",
+          bgMode: "school-hall",
           speaker: "Petticoat",
           text: "No running or butt-sliding in the halls, Darwin! You have detention! Also, meet our new transfer student. Be nice to her.",
           char: { name: "Petticoat", img: "assets/char_petticoat.jpg", pos: "right" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
-          bgMode: "detention",
+          bg: "",
+          bgMode: "school-hall",
           speaker: "Spot",
           text: "Bark bark, periodt. 💅✨",
           sound: "victory",
           char: { name: "Spot", img: "assets/char_spot.jpg", pos: "right", bounce: true, aura: "baddie-sparkle" }
         },
         {
-          bg: "assets/bg_bakery.jpg",
-          bgMode: "detention",
+          bg: "",
+          bgMode: "school-hall",
           speaker: "Darwin",
           text: "Damn, she kind of bad though... acrylic nails, fake eyelashes, Balenciaga collar?! But I must stay focused! My heart belongs to Rafiki!",
           char: { name: "Darwin", img: "assets/char_darwin.jpg", pos: "left" }
         },
         {
           bg: "assets/bg_kindergarten.jpg",
+          bgMode: "",
           bgm: "happy",
           speaker: "Narrator",
           text: "Darwin stealthily sneaks out of Petticoat's detention class and sprints down to the Kindergarten wing—where he first bonded with Rafiki over a stolen juice box years ago.",
@@ -292,6 +304,7 @@ window.GAME_STORY = {
         },
         {
           bg: "assets/bg_clara_basement.jpg",
+          bgMode: "",
           bgm: "yandere",
           speaker: "Narrator",
           text: "Darwin wakes up tied to a wooden chair in Clara's damp basement. The walls are wallpapered with detailed photographs of Darwin's asphalt skid marks.",
@@ -331,8 +344,8 @@ window.GAME_STORY = {
           char: null
         },
         {
-          bg: "assets/bg_kindergarten.jpg",
-          bgMode: "sunset",
+          bg: "",
+          bgMode: "courtyard",
           bgm: "happy",
           speaker: "Darwin",
           text: "Rafiki, I escaped the yandere and the moose just for you! Let us be together!",
@@ -340,15 +353,15 @@ window.GAME_STORY = {
           charRight: { name: "Rafiki", img: "assets/char_rafiki.jpg", pos: "right" }
         },
         {
-          bg: "assets/bg_kindergarten.jpg",
-          bgMode: "sunset",
+          bg: "",
+          bgMode: "courtyard",
           bgm: "dramatic",
           speaker: "Rafiki",
           text: "Darwin... there is something I must show you...",
           glitch: true
         },
         {
-          bg: "assets/bg_kindergarten.jpg",
+          bg: "",
           bgMode: "police-sirens",
           speaker: "Narrator",
           text: "Rafiki pulls a Jidion on Darwin and reveals that he indeed does have a dick!",
@@ -357,7 +370,7 @@ window.GAME_STORY = {
           glitch: true
         },
         {
-          bg: "assets/bg_kindergarten.jpg",
+          bg: "",
           bgMode: "police-sirens",
           speaker: "Narrator",
           text: "Police sirens blare outside as SWAT officers crash through the roof and arrest Darwin on the spot!",
@@ -365,6 +378,7 @@ window.GAME_STORY = {
         },
         {
           bg: "assets/title.jpg",
+          bgMode: "",
           bgm: "happy",
           speaker: "Moral of the Story",
           text: "THE END!\n\n\"Moral of the story: You don’t get mats from breaking someone else’s builds\"",
