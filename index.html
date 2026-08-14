@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doki Doki Darwin Club!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    
+    <!-- Title Screen -->
+    <div id="title-screen" class="title-screen" style="background-image: url('assets/title.jpg');">
+      <h1>DOKI DOKI DARWIN CLUB!</h1>
+      <div class="menu-buttons">
+        <button id="btn-start" class="ddlc-btn">NEW GAME</button>
+        <button id="btn-load-title" class="ddlc-btn">LOAD GAME</button>
+        <button id="btn-credits" class="ddlc-btn">CREDITS</button>
+      </div>
+    </div>
+
+    <!-- Main Game Viewport -->
+    <div id="game-viewport" class="game-viewport" style="background-image: url('assets/bg_bakery.jpg');">
+      
+      <!-- Character Stage -->
+      <div id="character-stage" class="character-stage">
+        <div id="sprite-left" class="sprite-container left"></div>
+        <div id="sprite-center" class="sprite-container center"></div>
+        <div id="sprite-right" class="sprite-container right"></div>
+      </div>
+
+      <!-- Dialogue UI -->
+      <div id="dialogue-box-container" class="dialogue-box-container">
+        <div id="speaker-tag" class="speaker-tag">Narrator</div>
+        <div id="dialogue-box" class="dialogue-box">
+          <div id="dialogue-text" class="dialogue-text">Welcome to Doki Doki Darwin Club! Click anywhere to begin...</div>
+          <div class="click-indicator">▼</div>
+        </div>
+
+        <!-- Controls -->
+        <div class="control-bar">
+          <button id="btn-auto" class="ctrl-btn">AUTO: OFF</button>
+          <button id="btn-skip" class="ctrl-btn">SKIP</button>
+          <button id="btn-log" class="ctrl-btn">LOG</button>
+          <button id="btn-save" class="ctrl-btn">SAVE</button>
+          <button id="btn-load" class="ctrl-btn">LOAD</button>
+          <button id="btn-audio" class="ctrl-btn">AUDIO: ON</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialogue Log Modal -->
+    <div id="modal-log" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2>Dialogue History</h2>
+          <button id="close-log" class="close-btn">✖</button>
+        </div>
+        <div id="log-content" class="log-content"></div>
+      </div>
+    </div>
+
+    <!-- Save / Load Modal -->
+    <div id="modal-save" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="modal-save-title">Save Game</h2>
+          <button id="close-save" class="close-btn">✖</button>
+        </div>
+        <div class="save-slots-grid">
+          <div class="save-slot" data-slot="1">
+            <div class="slot-title">Slot 1</div>
+            <div id="slot-info-1" class="slot-info">Empty Slot</div>
+          </div>
+          <div class="save-slot" data-slot="2">
+            <div class="slot-title">Slot 2</div>
+            <div id="slot-info-2" class="slot-info">Empty Slot</div>
+          </div>
+          <div class="save-slot" data-slot="3">
+            <div class="slot-title">Slot 3</div>
+            <div id="slot-info-3" class="slot-info">Empty Slot</div>
+          </div>
+          <div class="save-slot" data-slot="4">
+            <div class="slot-title">Slot 4</div>
+            <div id="slot-info-4" class="slot-info">Empty Slot</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Poem Minigame Modal -->
+    <div id="modal-poem" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2>Write a Poem for the Club!</h2>
+          <span id="poem-count" style="font-weight: 800; color: #ff1493;">0 / 5 Words</span>
+        </div>
+        <div class="poem-notebook">
+          <p style="font-size: 1.1rem; color: #555; text-align: center;">Choose words that resonate with your inner asphalt-sliding sigma spirit!</p>
+          <div id="poem-words" class="poem-words-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credits Modal -->
+    <div id="modal-credits" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2>Credits</h2>
+          <button id="close-credits" class="close-btn">✖</button>
+        </div>
+        <div style="font-size: 1.1rem; line-height: 1.8; color: #444;">
+          <p><strong>Doki Doki Darwin Club!</strong></p>
+          <p>Inspired by Doki Doki Literature Club & the legendary Darwin story.</p>
+          <p>Visual Assets generated with <strong>Nano Banana</strong> (Gemini AI).</p>
+          <p>Audio synthesized via HTML5 Web Audio API.</p>
+          <br>
+          <p><em>Moral of the story: You don’t get mats from breaking someone else’s builds!</em></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="audio.js"></script>
+  <script src="story.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
